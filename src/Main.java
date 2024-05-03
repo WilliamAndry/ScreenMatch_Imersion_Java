@@ -47,7 +47,6 @@ public class Main {
         System.out.println("La media de la pelicula Matrix calculada por el usuario es " + mediaEvaluacionUsuario/3 +"/10.0");
     }
 }
-//01:10:00
 
 
 
