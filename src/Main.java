@@ -14,6 +14,7 @@ public class Main {
                 La mejor pelicula del fin del milenio
                 """;
         double mediaEvaluacionUsuario = 0;
+        int desafioAlura=1;
 
         System.out.println("Pelicula: " + nombre);
         System.out.println("Lanzamiento: " + fechaDeLanzamiento);
@@ -28,13 +29,22 @@ public class Main {
         }else {
             System.out.println("Pelicula RETRO que vale la pena ver");
         }
+        /*
         for (int i = 0; i < 3; i++) {
                 Scanner teclado = new Scanner(System.in);
             System.out.println("Ingresa la calificacion a Matrix:");
             double notaMatrix = teclado.nextDouble();
             mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
         }
-        System.out.println("La media de la pelicula Matrix calucalada por el usuario es " + mediaEvaluacionUsuario/3);
+*/
+        while(desafioAlura<=3){
+            Scanner teclado = new Scanner(System.in); //Todas las clases comienzan con mayuscula la primera letra Scanner,String,etc
+            System.out.println("Ingresa la calificacion a Matrix:");
+            double notaMatrix = teclado.nextDouble();
+            mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
+            desafioAlura++;
+        }
+        System.out.println("La media de la pelicula Matrix calculada por el usuario es " + mediaEvaluacionUsuario/3 +"/10.0");
     }
 }
 //01:10:00
